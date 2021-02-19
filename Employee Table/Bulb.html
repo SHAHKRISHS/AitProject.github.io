@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bulb</title>
+	<script>
+		function myFunction(sw){
+			var pic;
+			if(sw==0){
+				pic = "bulboff.jpg"
+			}if(sw==1){
+				pic = "Greenbulb.jpg"
+			}if(sw==2){
+				pic = "yellowbulb.jpg"
+			}if(sw==3){
+				pic = "BlueBulb.jpg"
+			}if(sw==4){
+				pic = "PurpleBulb.jpg"
+			}
+			document.getElementById('bulb').src = pic;
+		}
+	</script>
+</head>
+<body>
+	<img id="bulb" src="C:\Users\Dell\Desktop\GitHub\Employee Table\bulboff.jpg" width="350" height="300">
+	<p>
+		<button type="button" onclick="myFunction(1)">Click For Color Green</button>
+		<button type="button" onclick="myFunction(2)">Click For Color Yellow</button>
+		<button type="button" onclick="myFunction(3)">Click For Color Blue</button>
+		<button type="button" onclick="myFunction(4)">Click For Color Purple</button>
+		<button type="button" onclick="myFunction(0)">Click To Turn Off</button>
+	</p>
+</body>
+</html>
